@@ -2,14 +2,12 @@
 
 A real-time data pipeline that extracts music metadata from Spotify, transforms it via AWS Lambda, streams it using Kafka, processes it with AWS Glue, and loads the cleaned data into Snowflake. This entire workflow is orchestrated using Apache Airflow.
 
-
-
-## 🗺️ Architecture
+### 🗺️ Architecture
 
 ![Architecture](Architecture.jpeg)
 
 
-## 🚀 Tech Stack
+### 🚀 Tech Stack
 
 - **Spotify API** – Playlist data source  
 - **AWS Lambda** – Extraction and transformation  
@@ -19,9 +17,7 @@ A real-time data pipeline that extracts music metadata from Spotify, transforms 
 - **Snowflake** – Final analytics-ready warehouse  
 - **Apache Airflow** – Pipeline orchestration
 
-
-
-## 🔄 Pipeline Steps
+### 🔄 Pipeline Steps
 
 1. ⚙️**Lambda 1 – Extraction**
    - Extracts Spotify playlist data using Spotipy
@@ -42,9 +38,7 @@ A real-time data pipeline that extracts music metadata from Spotify, transforms 
    - Reads from S3 using external stage
    - Loads into `spotify_data` table
 
-
-
-## 📈 Future Improvements
+### 📈 Future Improvements
 
 - 🧩 **Schema Registry Integration**  
   Add Apache Avro + Schema Registry for better data governance in Kafka.
@@ -61,9 +55,7 @@ A real-time data pipeline that extracts music metadata from Spotify, transforms 
 - 📊 **Visualization Layer**  
   Connect Snowflake to BI tools like Tableau, Power BI, or Superset.
 
-
-
-## ✅ Conclusion
+### ✅ Conclusion
 
 **Spotify StreamFlow** demonstrates how to build a scalable, modular, and automated data pipeline using modern cloud-native tools. From raw API extraction to real-time Kafka streaming and Snowflake warehousing — this project highlights key concepts in data engineering, orchestration, and ETL best practices.
    
